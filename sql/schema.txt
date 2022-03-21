@@ -1,0 +1,64 @@
+-- create database project;
+
+-- use project;
+
+-- create table users(
+-- id int auto_increment,
+-- fname_user varchar(35),
+-- lname_user varchar(35),
+-- username varchar(40),
+-- password varchar(40),
+-- is_admin boolean default false,
+-- primary key(id)
+-- );
+
+-- create table vacations(
+-- id int auto_increment,
+-- description varchar(1000),
+-- target varchar(100),
+-- image varchar(1000),
+-- from_date date,
+-- until_date date,
+-- amount int default 0,
+-- primary key(id)
+-- );
+
+-- create table follow(
+-- id int auto_increment,
+-- id_user int,
+-- id_vacation int,
+-- primary key(id),
+-- foreign key(id_user) references users(id),
+-- foreign key(id_vacation) references vacations(id)
+-- );
+
+-- insert into users(fname_user, lname_user, username, password, is_admin)
+-- values('dima', 'dima', 'dima@gmail.com', '12345', true)
+-- values('david', 'r.', 'davidr@gmail.com', '207149311'),
+-- ('rivka', 'raudi', 'r0504124610@gmail.com', '207818808'),
+-- ('ayala', 'r.', 'ayala@gmail.com', '1234');
+
+-- insert into vacations(description, target, from_date, until_date, amount, image)
+-- values('A fun and relaxing vacation to ancient and historic places',
+-- 'Lebanon', '07/02/22', '15/02/22',1 ,'https://www.shefhotel.co.il/files/gallery/items/source/11.jpg'),
+-- ('Vacation including trips and interesting sites',
+-- 'Ethiopia', '03/03/22', '11/03/22',10 ,'https://images.fattal.co.il/octopus/Upload/Images/Resorts/magic-palace-eilat-pool4.jpg'),
+-- ('Holiday movies, well worth a try',
+-- 'Africa', '11/04/22', '15/04/22',5 ,'https://www.amadeus.co.il/hotelImage/37581.jpg'),
+-- ('An amazing vacation especially for you',
+-- 'Italy', '01/06/22', '15/06/22',70 ,'https://cdn.isrotel.co.il/media/23819/%D7%A8%D7%95%D7%99%D7%90%D7%9C-%D7%92%D7%90%D7%A8%D7%93%D7%9F3.jpg?anchor=center&mode=crop&width=400&height=297&rnd=132716758130000000'),
+-- ('A dream vacation full of experiences',
+-- 'Iran', '04/02/22', '13/02/22',28 ,'https://images.bigdeal.co.il/FilesUpload/CampaignImages/0/450/225250_Original.jpg'),
+-- ('Vacation including trips and interesting sites',
+-- 'Ukraine', '10/01/22', '15/01/22',0 ,'https://www.easygo.co.il/clients/easygo/gallery/Israel/Haifa/hacienda-forest/hacienda-forest-haifa_756_500_7.jpg'),
+-- ('A special experience in a pleasant atmosphere',
+-- 'Russia', '12/05/22', '15/05/22',3 , 'https://static01.tjt.co.il/sites/www.totallyjewishtravel.com/files/tcoreimg/ee0fd6257adf62c5da5b4fce9adcbb3f.jpg'),
+-- ('Relaxing freedom to mountain and amazing streams',
+-- 'Venice', '14/03/22', '20/03/22' ,1, 'https://www.nehoratours.co.il/clients/nehora/gallery/caribbean/HIDEAWAYATROYALTONPUNTACANA/Hideaway_at_Royalton_main.jpg'),
+-- ('A fun and relaxing vacation to ancient and historic places',
+-- 'Japan', '18/12/22', '25/12/22',2, 'https://static01.tjt.co.il/sites/www.totallyjewishtravel.com/files/tcoreimg/ee0fd6257adf62c5da5b4fce9adcbb3f.jpg'),
+-- ('Vacation including trips and interesting sites',
+-- 'Denmark', '03/03/22', '11/03/22',10 ,'https://www.nehoratours.co.il/clients/nehora/gallery/caribbean/HIDEAWAYATROYALTONPUNTACANA/Hideaway_at_Royalton_main.jpg'),
+
+--  insert into follow(id_user, id_vacation)
+--  values(1,2),(1,3),(3,2),(1,1),(2,2);
